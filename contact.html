@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container-nav">
+            <nav class="navbar" role="navigation">
+              <a href="#" class="brand">Mi primer Website</a>
+              <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Acerca de</a></li>
+                <li><a href="services.html">Servicios</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+              </ul>
+            </nav>
+            <button class="button-menu-toggle">Menu</button>
+          </div>
+    </header>
+<main>
+    <div class="container">
+      <h1>Contacto</h1>
+      <p>¡Contáctanos para cualquier consulta o solicitud de información!</p>
+        <section class="section-formulario">
+          <h2>Formulario</h2>
+          <form class="formulario" id="myForm">
+              <!-- Campo para nombre -->
+              <div>
+                  <label class="formulario_label" for="nombre"><h4>Nombre</h4></label>
+                  <div class="formulario_grupo-input">
+                      <input type="type" id="nombre" name="nombre" class="formulario_input"
+                          placeholder="Ingresa tu nombre" required>
+                  </div>
+              </div>
+              <!-- Campo para apellido -->
+              <div>
+                  <label class="formulario_label" for="apellido"><h4>Apellido</h4></label>
+                  <div class="formulario_grupo-input">
+                      <input type="type" id="apellido" name="apellido" class="formulario_input"
+                          placeholder="Ingresa tu apellido" required>
+                  </div>
+              </div>
+              <!-- Campo para correo electrónico -->
+              <div>
+                  <label class="formulario_label" for="email"><h4>Correo electrónico</h4></label>
+                  <div class="formulario_grupo-input">
+                      <input type="email" id="email" name="email" class="formulario_input" placeholder="correo@correo.com"
+                          required>
+                  </div>
+              </div>
+  
+              <!-- Campo para nacionalidad -->
+              <div>
+                  <label class="formulario_label" for="nacionalidad"><h4>Nacionalidad</h4></label>
+                  <div class="formulario_grupo-input">
+                      <input type="type" id="nacionalidad" name="nacionalidad" class="formulario_input"
+                          placeholder="Ingresa tu nacionalidad" required>
+                  </div>
+              </div>
+              <!-- Botón de envío-->
+              <div class="form-envio">
+              <div class="formulario_grupo-btn-enviar">
+                  <button type="submit" class="formulario_btn">Enviar</button>
+              </div>
+          </div>
+          </form>
+      </section>
+    </div>
+</main>
+<script src="script.js"></script>
+<script src="menu.js"></script>
+</body>
+</html>

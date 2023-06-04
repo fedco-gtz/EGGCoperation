@@ -1,0 +1,76 @@
+
+.container {
+    border: 1px solid darkkhaki;
+    display: flex;
+    width: 800px;
+    height: 600px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.caja1 {
+    background-color: coral;
+    width: 100px;
+    height: 100px;
+
+}
+
+.caja2 {
+    background-color: cornflowerblue;
+    width: 100px;
+    height: 100px;
+}
+
+.caja3 {
+    background-color: darkseagreen;
+    width: 100px;
+    height: 100px;
+}
+
+#uno {
+    align-self: start; 
+    margin-left: 30px;
+}
+
+#dos {
+    align-self: center;
+    margin-left: 30px;
+    margin-right: 30px; 
+}
+
+#tres {
+    align-self: end;
+    margin-right: 30px; 
+}
+
+#cuatro {
+    align-self: center;
+    margin-top: 30px;
+}
+
+#cinco {
+    align-self: center;
+    width: 100%;
+}
+
+#seis {
+    align-self: center;
+    margin-bottom: 30px;
+}
+
+#siete {
+    align-self: end;
+}
+
+#ocho {
+    align-self: end;
+}
+
+#nueve {
+    align-self: end;
+}
+
+#diez {
+    flex-direction: column-reverse;
+    justify-content: end;
+}

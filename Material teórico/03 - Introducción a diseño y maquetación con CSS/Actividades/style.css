@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body {
+   border: 7px solid blueviolet;
+   display: inline-flex;
+}
+
+.container{
+    align-items: stretch;
+    flex-direction: row;
+    align-self: end;
+}
+
+.box {
+    background-color: red;
+    width: 300px;
+    height: 150px;
+    padding: 30px 10px 30px 10px;
+    border: 5px solid black;
+  
+}
+
+.box1{
+    background-color: blue;
+    width: 200px;
+    height: 130px;
+    padding: 30px 10px 30px 10px;
+    border: 5px solid black;
+   
+}
+
+.box2{
+    background-color: yellow;
+    width: 150px;
+    height: 180px;
+    padding: 30px 10px 30px 10px;
+    border: 5px solid black;
+   
+}

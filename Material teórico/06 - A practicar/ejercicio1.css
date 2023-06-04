@@ -1,0 +1,27 @@
+
+
+.divA {
+    background-color: red;
+    margin: 30px;
+    padding: 20px;
+    width: 500px;
+    height: 300px;
+}
+
+.divB {
+    background-color: blue;
+    margin: 30px;
+    padding: 20px;
+    width: 400px;
+    height: 200px;
+}
+
+.divC {
+    background-color: yellow;
+    margin: 30px;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+
+}
+
