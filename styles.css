@@ -162,7 +162,6 @@ p {
     justify-content: center;
     font-weight: bold;
     transition: 0.1s ease all;
-
 }
 
 .formulario_btn:hover {
@@ -245,6 +244,7 @@ a {
     }
 
     .nav-links.nav-links-responsive {
+        z-index: 1;
         position: absolute;
         display: flex;
         background-color: rgba(20, 20, 20, 0.95);
@@ -265,7 +265,7 @@ a {
     }
 
     .form-envio {
-        margin-left: 50%;
+        margin-left: 40%;
     }
 
     .button-menu-toggle {
@@ -289,5 +289,23 @@ a {
         padding-left: 50px;
         padding-right: 50px;
         justify-content: center;
+    }
+
+    .formulario_input {
+        z-index: 0;
+        width: 100%;
+        background: #ffffff;
+        border: 3px solid transparent;
+        border-radius: 3px;
+        height: 45px;
+        line-height: 45px;
+        padding: 0 40px 0 10px;
+        transition: 0.3s ease all;
+    }
+    
+    .formulario_input:focus {
+        border: 3px solid #0075FF;
+        outline: none;
+        box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
     }
 }
