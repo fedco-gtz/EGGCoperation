@@ -1,6 +1,9 @@
-* {
-    padding: 0;
+*,
+*::before,
+*::after {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -218,56 +221,59 @@ footer {
     padding: 20px;
     color: black;
     text-align: center;
-  }
-  
-  /* Estilo del texto en el footer */
-  footer p {
+}
+
+/* Estilo del texto en el footer */
+footer p {
     font-size: 24px;
-    color:#ffffff;
-  }
-  
-  /* Estilo del botón en el footer */
-  footer .boton {
+    color: #ffffff;
+}
+
+/* Estilo del botón en el footer */
+footer .boton {
     background: linear-gradient(to right, #336699, #234f76);
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 30px;
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  /* Cambiar el estilo del cursor al pasar el mouse sobre el botón */
-  footer .boton:hover {
-    background: linear-gradient(to right, #234f76, #336699);
-  }
+    width:auto;
+}
 
-  .redes-sociales {
+/* Cambiar el estilo del cursor al pasar el mouse sobre el botón */
+footer .boton:hover {
+    background: linear-gradient(to right, #234f76, #336699);
+    font-size: 18px;
+width:auto;
+}
+
+.redes-sociales {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-  }
-  
-  .redes-sociales a {
+}
+
+.redes-sociales a {
     margin: 0 10px;
     color: #ffffff;
     font-size: 24px;
     text-decoration: none;
     transition: color 0.3s ease;
-  }
-  
-  .redes-sociales a:hover {
-    color: yellow; 
-  }
-  
-  .redes-sociales i {
+}
+
+.redes-sociales a:hover {
+    color: yellow;
+}
+
+.redes-sociales i {
     transition: transform 0.3s ease;
-  }
-  
-  .redes-sociales a:hover i {
-    transform: scale(1.2); /* Aumentar el tamaño del ícono al pasar el mouse */
-  }
+}
+
+.redes-sociales a:hover i {
+    transform: scale(1.2);
+}
 
 @media (max-width: 768px) {
     .column {
@@ -349,7 +355,7 @@ footer {
         padding: 0 40px 0 10px;
         transition: 0.3s ease all;
     }
-    
+
     .formulario_input:focus {
         border: 3px solid #0075FF;
         outline: none;

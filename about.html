@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primer Website</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="about.css">
 </head>
 
 <body>
@@ -30,19 +31,50 @@
             <p>¡Bienvenida/o!
                 Aquí, aprenderás más sobre nuestra empresa y los servicios que ofrecemos.</p>
         </div>
-        <div class="img-container">
-           <img src="imagen1.png" alt="A tu ritmo pero siempre acompañado" width="33%" height="33%"/>
-            <img src="imagen2.png" alt="Conocé a todos tus futuros compañeros de universidad" width="33%" height="33%"/>
-            <img src="imagen3.png" alt="Aprendé con los verdaderos youtubers de la Ciencia" width="33%" height="33%"/>
-        </div>
         <div class="img-container1">
-            <img src="imagen1.png" alt="A tu ritmo pero siempre acompañado" />
-            <img src="imagen2.png" alt="Conocé a todos tus futuros compañeros de universidad" />
-            <img src="imagen3.png" alt="Aprendé con los verdaderos youtubers de la Ciencia" />
+            <div class="image-wrapper">
+                <img src="imagen1.png" alt="A tu ritmo pero siempre acompañado">
+                <p class="image-caption">A tu ritmo pero siempre acompañado</p>
+                <p class="image-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec tortor eros. Sed eu sapien rutrum, tempor nisl id, condimentum est.</p>
+            </div>
+            <div class="image-wrapper">
+                <img src="imagen2.png" alt="Conocé a todos tus futuros compañeros de universidad">
+                <p class="image-caption">Conocé a todos tus futuros compañeros de universidad</p>
+                <p class="image-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec tortor eros. Sed eu sapien rutrum, tempor nisl id, condimentum est.</p>
+            </div>
+            <div class="image-wrapper">
+                <img src="imagen3.png" alt="Aprendé con los verdaderos youtubers de la Ciencia">
+                <p class="image-caption">Aprendé con los verdaderos youtubers de la Ciencia</p>
+                <p class="image-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec tortor eros. Sed eu sapien rutrum, tempor nisl id, condimentum est.</p>
+            </div>
         </div>
+        <div class="img-container">
+            <img src="imagen1.png" alt="A tu ritmo pero siempre acompañado" width="33%" height="33%" />
+            <img src="imagen2.png" alt="Conocé a todos tus futuros compañeros de universidad" width="33%"
+                height="33%" />
+            <img src="imagen3.png" alt="Aprendé con los verdaderos youtubers de la Ciencia" width="33%" height="33%" />
     </main>
 
+    <footer>
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com/tu_perfil_de_facebook" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.twitter.com/tu_perfil_de_twitter" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/tu_perfil_de_instagram" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        <div>
+            <p><b>Este es el footer de mi página</b></p>
+            <button class="boton" onclick="showAlert()">¡Haz click aquí!</button>
+        </div>
+    </footer>
+
     <script src="menu.js"></script>
+    <script src="about.js"></script>
 </body>
 
 </html>
