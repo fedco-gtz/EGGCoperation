@@ -4,18 +4,8 @@
 }
 
 body {
-    background-color: lightblue;
-    color: darkblue;
-}
-
-footer {
-    display: flex;
-    flex-direction: column;
-    height: 200px;
-    background-color: #0075FF !important;
-    color: #ffffff !important;
-    justify-content: center;
-    align-items: center;
+    background-color: #8ecae6;
+    color: #023047;
 }
 
 .media {
@@ -221,6 +211,63 @@ a {
 .button-menu-toggle {
     display: none;
 }
+
+/* Estilos Footer con ChatGPT */
+footer {
+    background: linear-gradient(to right, #000080, #8A2BE2);
+    padding: 20px;
+    color: black;
+    text-align: center;
+  }
+  
+  /* Estilo del texto en el footer */
+  footer p {
+    font-size: 24px;
+    color:#ffffff;
+  }
+  
+  /* Estilo del botón en el footer */
+  footer .boton {
+    background: linear-gradient(to right, #336699, #234f76);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Cambiar el estilo del cursor al pasar el mouse sobre el botón */
+  footer .boton:hover {
+    background: linear-gradient(to right, #234f76, #336699);
+  }
+
+  .redes-sociales {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .redes-sociales a {
+    margin: 0 10px;
+    color: #ffffff;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .redes-sociales a:hover {
+    color: yellow; 
+  }
+  
+  .redes-sociales i {
+    transition: transform 0.3s ease;
+  }
+  
+  .redes-sociales a:hover i {
+    transform: scale(1.2); /* Aumentar el tamaño del ícono al pasar el mouse */
+  }
 
 @media (max-width: 768px) {
     .column {
