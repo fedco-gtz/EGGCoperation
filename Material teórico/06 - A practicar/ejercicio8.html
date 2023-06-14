@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8</title>
+    <link rel="stylesheet" href="ejercicio8.css">
+</head>
+
+<body>
+    <div id="formulario">
+        <form>
+            <div>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" required>
+                <div class="error-message" id="email-error"></div>
+            </div>
+            <div>
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" required>
+                <div class="error-message" id="edad-error"></div>
+            </div>
+            <div>
+                <label for="tipo-empleado">Tipo de Empleado:</label>
+                <select id="tipo-empleado" required>
+                    <option value="" disabled selected>Seleccione un tipo</option>
+                    <option value="vendedor">Vendedor</option>
+                    <option value="encargado">Encargado de turno</option>
+                    <option value="supervisor">Supervisor general</option>
+                </select>
+            </div>
+            <div id="ventas-container" style="display: none;">
+                <label for="cantidad-ventas">Cantidad de Ventas:</label>
+                <input type="number" id="cantidad-ventas">
+                <div class="error-message" id="ventas-error"></div>
+                <label for="monto-vendido">Monto Total Vendido:</label>
+                <input type="number" id="monto-vendido" step="0.01">
+                <div class="error-message" id="monto-error"></div>
+            </div>
+            <div id="empleados-container" style="display: none;">
+                <label for="cantidad-empleados">Cantidad de Empleados a Cargo:</label>
+                <input type="number" id="cantidad-empleados">
+                <div class="error-message" id="empleados-error"></div>
+            </div>
+            <div id="locales-container" style="display: none;">
+                <label for="cantidad-locales">Cantidad de Locales Administrados:</label>
+                <input type="number" id="cantidad-locales">
+                <div class="error-message" id="locales-error"></div>
+                <label for="descripcion">Descripción del Desempeño General:</label>
+                <textarea id="descripcion"></textarea>
+                <div class="error-message" id="descripcion-error"></div>
+            </div>
+            <div>
+                <label for="color">Color Favorito:</label>
+                <input list="colores" id="color">
+                <datalist id="colores">
+                    <option value="amarillo">
+                    <option value="azul">
+                    <option value="rojo">
+                    <option value="verde">
+                    <option value="naranja">
+                    <option value="violeta">
+                    <option value="blanco">
+                    <option value="negro">
+                </datalist>
+            </div>
+            <fieldset id="turno-fieldset" style="display: none;">
+                <legend>Turno:</legend>
+                <div>
+                    <input type="radio" id="turno-manana" name="turno" value="manana" required>
+                    <label for="turno-manana">Mañana</label>
+                </div>
+                <div>
+                    <input type="radio" id="turno-tarde" name="turno" value="tarde" required>
+                    <label for="turno-tarde">Tarde</label>
+                </div>
+            </fieldset>
+            <button type="submit" disabled>Submit</button>
+        </form>
+    </div>
+
+    <table id="tabla-empleados">
+        <thead>
+            <tr>
+                <th>Correo Electrónico</th>
+                <th>Edad</th>
+                <th>Tipo de Empleado</th>
+                <th>Cantidad de Ventas</th>
+                <th>Monto Total Vendido</th>
+                <th>Cantidad de Empleados a Cargo</th>
+                <th>Cantidad de Locales Administrados</th>
+                <th>Descripción del Desempeño General</th>
+                <th>Color Favorito</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="ejercicio8.js"></script>
+</body>
+
+</html>
